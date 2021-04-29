@@ -226,7 +226,7 @@ def isEntityInList(entityType:str):
         'receiver_phone','remit_to_address','remit_to_name','ship_from_address',
         'ship_from_name','ship_to_address','ship_to_name','supplier_address','supplier_email',
         'supplier_name','supplier_phone','supplier_registration','supplier_tax_id',
-        'supplier_website','total_amount')):
+        'supplier_website','total_amount','line_item')):
         return True;
     else:
         return False;
