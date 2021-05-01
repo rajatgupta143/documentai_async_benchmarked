@@ -59,7 +59,7 @@ def invoke_batch_process(request):
             print ("Sent to PubSub")
             batch_msg={}
 
-        if(i+1==len(blob_list)): #Last batch
+        if(i+1==len(blob_list) and file_counter !=0): #Last batch
             print("Batch message:{}".format(batch_msg))
             message_data = json.dumps(batch_msg).encode('utf-8')
             future = publisher.publish(topic_path, data=message_data)
